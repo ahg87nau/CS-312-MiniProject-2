@@ -1,0 +1,174 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('colorful-cocktails.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.background-overlay {
+  background-color: rgba(82, 82, 79, 0.814);
+  min-height: 100vh;
+  padding: 2rem;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  background: rgba(157, 155, 142, 0.797);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+.btn, button {
+  background: #78b2b7e9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background: #667172;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+select, input, .form-select {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccca6;
+}
+
+.toggle-card-container,
+#footballSection,
+#weatherSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;       
+}
+
+.toggle-card-container {
+  margin-top: 30px;       
+}
+
+#footballSection .card,
+#weatherSection .card {
+  width: 100%;
+  max-width: 600px;       
+  margin: 0 auto;        
+}
+
+#footballSection ul, 
+#weatherSection p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+}
+
+footer a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #78b2b7;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .btn, button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-img-top {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+  z-index: -1;
+}
+
+.info-card {
+  background: rgba(0, 0, 0, 0.6);   
+  backdrop-filter: blur(6px);       
+  -webkit-backdrop-filter: blur(6px); 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.info-card h2,
+.info-card p,
+.info-card li {
+  color: #f1f1f1;
+}
+
